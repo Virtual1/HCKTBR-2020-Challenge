@@ -1,0 +1,45 @@
+:root {
+  --background: #ebf5fc;
+
+  --light-blue: #00cdfc;
+  --dark-blue: #007fe8;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+}
+
+.logo {
+  margin: 100px 100px 0 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom left,
+    var(--dark-blue) 15%,
+    var(--light-blue)
+  );
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  /* If we don't put any content, this won't show up because we're using ::before */
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  width: 150px;
+  height: 150px;
+  /* background: #ea2f98; */
+  background: linear-gradient(
+    to bottom left,
+    rgba(249, 180, 70, 1) 15%,
+    rgba(234, 47, 152, 0.8)
+  );
+  border-radius: 60px;
+  border: 12px solid var(--background);
+}
