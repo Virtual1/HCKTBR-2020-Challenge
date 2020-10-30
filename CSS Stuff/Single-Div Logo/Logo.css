@@ -14,7 +14,13 @@ body {
   background: var(--background);
 }
 
-.logo {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bits {
   margin: 100px 100px 0 0;
   width: 150px;
   height: 150px;
@@ -27,7 +33,7 @@ body {
   position: relative;
 }
 
-.logo::before {
+.bits::before {
   content: "";
   /* If we don't put any content, this won't show up because we're using ::before */
   position: absolute;
@@ -45,7 +51,7 @@ body {
   border: 12px solid var(--background);
 }
 
-.another {
+.love {
   position: absolute;
   margin: auto;
   top: 0;
@@ -61,7 +67,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-.another::after {
+.love::after {
   background-color: fuchsia;
   content: "";
   border-radius: 50%;
@@ -76,7 +82,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-.another::before {
+.love::before {
   background-color: fuchsia;
   content: "";
   /* If we don't put any content, this won't show up because we're using ::before */
