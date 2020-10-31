@@ -1,59 +1,15 @@
-:root {
-  --background: #ebf5fc;
-
-  --light-blue: #00cdfc;
-  --dark-blue: #007fe8;
-  --violet: #7400b8;
-}
-
 body {
   display: flex;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background: var(--background);
+  background: #afc5d4;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.bits {
-  margin: 100px 100px 0 0;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: linear-gradient(
-    to bottom left,
-    var(--dark-blue) 15%,
-    var(--light-blue)
-  );
-  position: relative;
-}
-
-.bits::before {
-  content: "";
-  /* If we don't put any content, this won't show up because we're using ::before */
-  position: absolute;
-  bottom: 60px;
-  left: 60px;
-  width: 150px;
-  height: 150px;
-  /* background: #ea2f98; */
-  background: linear-gradient(
-    to bottom left,
-    rgba(249, 180, 70, 1) 15%,
-    rgba(234, 47, 152, 0.8)
-  );
-  border-radius: 60px;
-  border: 12px solid var(--background);
-}
-
-.love {
+.heart {
   position: absolute;
   margin: auto;
+  z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -67,11 +23,12 @@ body {
   animation-iteration-count: infinite;
 }
 
-.love::after {
+
   background-color: fuchsia;
   content: "";
   border-radius: 50%;
   position: absolute;
+  z-index: -1;
   height: 175px;
   width: 175px;
   top: 0px;
@@ -82,34 +39,22 @@ body {
   animation-iteration-count: infinite;
 }
 
-.love::before {
+.heart::before {
   background-color: fuchsia;
   content: "";
   /* If we don't put any content, this won't show up because we're using ::before */
 
   position: absolute;
-
+  z-index: -1;
   border-radius: 50%;
   height: 175px;
   width: 175px;
-
   top: -87.5px;
   left: 0px;
 
   animation-name: color;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-
-  /*
-  background-color: #ef476f;
-  width: 150px;
-  height: 150px;
-  position: relative;
-  top: 80px;
-  left: 100px;
-  transform: rotate(-45deg);
-  border-radius: 10%;
-  border: 12px solid var(--background);*/
 }
 
 @keyframes color {
@@ -127,5 +72,57 @@ body {
   }
   100% {
     background-color: #073b4c;
+  }
+}
+
+#infinity {
+  width: 300px;
+  height: 180px;
+  position: relative;
+}
+
+#infinity:before,
+#infinity:after {
+  content: "";
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 20px solid rgb(255, 38, 0);
+  border-radius: 70px 70px 0 70px;
+  transform: rotate(-45deg);
+
+  animation-name: line;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+#infinity:after {
+  left: auto;
+  right: 0;
+  border-radius: 70ps 70ps 70ps 0;
+  transform: rotate(135deg);
+
+  animation-name: line;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes line {
+  0% {
+    background-color: #71e23088;
+  }
+  25% {
+    background-color: #91658e8e;
+  }
+  50% {
+    background-color: #a30c3994;
+  }
+  75% {
+    background-color: #c0741e94;
+  }
+  100% {
+    background-color: #f0ec1698;
   }
 }
