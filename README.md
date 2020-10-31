@@ -19,23 +19,40 @@
 ## 2. Rhyming word generator -
         
         * IDEA
+        
         Using [datamuse API] (https://www.datamuse.com/api/)
         
         * TODO: 
-        [ ] Create simple landing page with input for a word to lookup -> **entered_word**
-        [ ] Create javascript to query the API `https://api.datamuse.com` and find 10 rhyming words using code: `/words?rel_rhy=`**`entered_word`**
+        
+        [ ] Create simple landing page with input for a word to 
+              lookup -> **entered_word**
+              
+        [ ] Create javascript to query the 
+              API `https://api.datamuse.com` 
+              and find 10 rhyming words using 
+              code: `/words?rel_rhy=`**`entered_word`**
+              
         [ ] Display the list of rhyming words in 2 x 5 grid.
         
         *Extra*
-        [ ] Add option to find words related to **entered_word** `/words?ml=`**`entered_word`**`&rel_rhy=`**`entered_word`**
+        
+        [ ] Add option to find words related to 
+              **entered_word** `/words?ml=`**`entered_word`
+              **`&rel_rhy=`**`entered_word`**
+              
         [ ] Add extra options availabe from the API
 
 ## 3. Create a JS game - Rock Paper Scissors
         
         * TODO:
+        
         [ ] Watch tutorials, noting the differences in approaches.
-        [ ] Draft an approach based on a mix of these, using best options for my skill level.
+        
+        [ ] Draft an approach based on a mix of these, using best 
+              options for my skill level.
+              
         [ ] Explain choices made in a text document.
+        
         [ ] Create the game and add a card.
 
 
@@ -45,9 +62,14 @@
                     **d(*⌒▽⌒*)b**
        
         *  TODO:
+        
         [ ] Watch tutorials, noting the differences in approaches.
-        [ ] Draft an approach based on a mix of these, using best options for my skill level.
+        
+        [ ] Draft an approach based on a mix of these, using best 
+              options for my skill level.
+              
         [ ] Explain choices made in a text document.
+        
         [ ] Create the game and add a card.
 
 
