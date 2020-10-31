@@ -1,0 +1,34 @@
+.MainHeading {
+  font-family: "Amita";
+  font-size: 1.5rem;
+  color: purple;
+  font-weight: 800;
+  font-style: oblique;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 5px 10px 5px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  text-shadow: 0.8px 0.8px blueviolet;
+}
+
+.HF2020Logo {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  opacity: 50%;
+  z-index: -1;
+}
+
+/*
+CSS info:
+ https://cssreference.io/typography/
+ 
+*/
+
+infobutton {
+  height: 25px;
+  width: 50px;
+  background-color: aqua;
+}
